@@ -17,7 +17,7 @@ public class DashToMouse : MonoBehaviour
 
     private void Start ()
     {
-
+        rb.AddForce(Vector3.right * 1300);
     }
 
 
@@ -60,7 +60,7 @@ public class DashToMouse : MonoBehaviour
 
         mouseDir = mouseDir.normalized;
 
-        rb.AddForce(mouseDir * 2000);
+        rb.AddForce(mouseDir * 1600);
 
     }
 

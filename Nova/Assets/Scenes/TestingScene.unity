@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 25501751}
   - component: {fileID: 25501750}
   m_Layer: 0
-  m_Name: Grid
+  m_Name: Grid Props
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -350,7 +350,7 @@ GameObject:
   - component: {fileID: 302925245}
   - component: {fileID: 302925244}
   m_Layer: 0
-  m_Name: Grid
+  m_Name: Grid Back Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -748,7 +748,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30a03b59a14b3844c8b68a4e493b7e24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_JumpForce: 1200
+  m_JumpForce: 1000
   m_CrouchSpeed: 0.4
   m_MovementSmoothing: 0.07
   m_AirControl: 1
@@ -808,7 +808,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 3
+  m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 5
   m_Material: {fileID: 0}
@@ -1004,7 +1004,7 @@ GameObject:
   - component: {fileID: 825415238}
   - component: {fileID: 825415237}
   m_Layer: 12
-  m_Name: ForTilemap
+  m_Name: Props
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2066,8 +2066,8 @@ GameObject:
   - component: {fileID: 1630087096}
   - component: {fileID: 1630087095}
   m_Layer: 11
-  m_Name: Tilemap
-  m_TagString: Ground
+  m_Name: Back wall
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6732,7 +6732,7 @@ GameObject:
   - component: {fileID: 2050734293}
   - component: {fileID: 2050734292}
   m_Layer: 0
-  m_Name: Grid
+  m_Name: Grid Scene Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6777,7 +6777,7 @@ GameObject:
   - component: {fileID: 2116567748}
   - component: {fileID: 2116567747}
   m_Layer: 10
-  m_Name: BackBack
+  m_Name: Scene Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
