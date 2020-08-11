@@ -45,8 +45,6 @@ public class DashToMouse : MonoBehaviour
             return true;
         }
 
-        animator.SetBool("IsDashing", false); 
-
         return false;
 
     }
@@ -62,7 +60,7 @@ public class DashToMouse : MonoBehaviour
 
         mouseDir = mouseDir.normalized;
 
-        rb.AddForce(mouseDir * 1500);
+        rb.AddForce(mouseDir * 2000);
 
     }
 

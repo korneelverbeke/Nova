@@ -18,6 +18,10 @@ public class PlayerMovement : MonoBehaviour
 
     public Animator animator;
 
+    public Transform groundCheck;
+
+    public LayerMask groundLayers;
+
     
     void Update()
     {
@@ -26,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
-        if (Input.GetButtonDown("Jump")) 
+        if (Input.GetButtonDown("Jump") && IsGrounded()) 
         {
             jump = true;
             animator.SetBool("IsJumping", true);
@@ -50,6 +54,7 @@ public class PlayerMovement : MonoBehaviour
     public void OnLanding ()
     {
         animator.SetBool("IsJumping", false);
+        animator.SetBool("IsDashing", false);
     }
 
     
@@ -58,6 +63,20 @@ public class PlayerMovement : MonoBehaviour
         animator.SetBool("IsCrouching", isCrouching);
     }
 
+
+    public bool IsGrounded()
+    {
+
+        Collider2D groundCheckRadius = Physics2D.OverlapCircle(groundCheck.position, 0.5f, groundLayers);
+
+        if(groundCheckRadius != null)
+        {
+            return true;
+        }
+
+        return false;
+
+    }
 
     void FixedUpdate () 
     {
