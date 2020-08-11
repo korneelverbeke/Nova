@@ -45,11 +45,8 @@ public class DashToMouse : MonoBehaviour
             return true;
         }
 
-        else
-        {
-         animator.SetBool("IsDashing", false);    
-        }
-        
+        animator.SetBool("IsDashing", false); 
+
         return false;
 
     }
