@@ -14,6 +14,7 @@ public class DashToMouse : MonoBehaviour
 
     public LayerMask groundLayers;
 
+    public int jumpCount = 0;
 
     private void Start ()
     {
@@ -24,11 +25,19 @@ public class DashToMouse : MonoBehaviour
     void Update ()
     {
 
-        if (Input.GetMouseButtonDown(0) && IsGrounded())
+        if (Input.GetMouseButtonDown(0) && jumpCount <= 0)
         {
+
             Dash();
 
             animator.SetBool("IsDashing", true);
+
+            jumpCount = jumpCount + 1;
+        }
+
+        if (IsGrounded())
+        {
+            jumpCount = 0;
         }
 
 
@@ -42,6 +51,7 @@ public class DashToMouse : MonoBehaviour
 
         if(groundCheckRadius != null)
         {
+            jumpCount = 0;
             return true;
         }
 
