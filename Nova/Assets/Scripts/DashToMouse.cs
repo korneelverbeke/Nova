@@ -5,11 +5,17 @@ using UnityEngine;
 public class DashToMouse : MonoBehaviour
 {
 
+
     public Rigidbody2D rb;
 
     public Animator animator;
 
-    private void Start()
+    public Transform groundCheck;
+
+    public LayerMask groundLayers;
+
+
+    private void Start ()
     {
 
     }
@@ -18,25 +24,47 @@ public class DashToMouse : MonoBehaviour
     void Update ()
     {
 
-        var mousePos = Camera.main.ScreenToWorldPoint (Input.mousePosition);
-        var mouseDir = mousePos - gameObject.transform.position;
-        mouseDir.z = 0.0f;
-        mouseDir = mouseDir.normalized;
- 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && IsGrounded())
         {
-            rb.AddForce(mouseDir * 1500);
+            Dash();
 
-            //animator.SetBool("IsDashing", true);
+            animator.SetBool("IsDashing", true);
         }
+
 
     }
 
 
-    /*public bool isGrounded()
+    public bool IsGrounded()
     {
 
-    }*/
+        Collider2D groundCheckRadius = Physics2D.OverlapCircle(groundCheck.position, 0.5f, groundLayers);
+
+        if(groundCheckRadius != null)
+        {
+            return true;
+        }
+
+        animator.SetBool("IsDashing", false); 
+
+        return false;
+
+    }
+
+    void Dash()
+    {
+
+        var mousePos = Camera.main.ScreenToWorldPoint (Input.mousePosition);
+
+        var mouseDir = mousePos - gameObject.transform.position;
+
+        mouseDir.z = 0.0f;
+
+        mouseDir = mouseDir.normalized;
+
+        rb.AddForce(mouseDir * 1500);
+
+    }
 
 
 }
