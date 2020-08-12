@@ -42,9 +42,7 @@ public class DashToMouse : MonoBehaviour
 
             animator.SetBool("IsDashing", true);
 
-            
-
-            dashCount = dashCount + 1;
+            StartCoroutine(AddToDashCount(1));
         }
 
     }
@@ -79,5 +77,17 @@ public class DashToMouse : MonoBehaviour
 
     }
 
+    IEnumerator AddToDashCount(int numberOfDashes)
+    {
+        Debug.Log("adding to dashcount");
+
+        while(IsGrounded() == true)
+        {
+          yield return null;
+        }
+
+        dashCount = dashCount + numberOfDashes;
+        Debug.Log("added to dashcount");
+    }
 
 }
