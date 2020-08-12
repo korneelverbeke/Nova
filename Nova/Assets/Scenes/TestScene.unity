@@ -592,7 +592,7 @@ MonoBehaviour:
   groundLayers:
     serializedVersion: 2
     m_Bits: 1536
-  jumpCount: 0
+  dashCount: 0
 --- !u!1 &531888143
 GameObject:
   m_ObjectHideFlags: 0
