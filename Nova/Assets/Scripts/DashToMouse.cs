@@ -17,6 +17,7 @@ public class DashToMouse : MonoBehaviour
     [HideInInspector]
     public int dashCount = 0;
 
+
     private void Start ()
     {
         rb.AddForce(Vector3.right * 1300);
@@ -79,7 +80,6 @@ public class DashToMouse : MonoBehaviour
 
     IEnumerator AddToDashCount(int numberOfDashes)
     {
-        Debug.Log("adding to dashcount");
 
         while(IsGrounded() == true)
         {
@@ -87,7 +87,7 @@ public class DashToMouse : MonoBehaviour
         }
 
         dashCount = dashCount + numberOfDashes;
-        Debug.Log("added to dashcount");
+
     }
 
 }
