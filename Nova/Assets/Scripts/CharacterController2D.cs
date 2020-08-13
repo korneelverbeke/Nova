@@ -19,6 +19,8 @@ public class CharacterController2D : MonoBehaviour
 	private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 	private Vector3 m_Velocity = Vector3.zero;
 
+	public ParticleSystem dust;
+
 	[Header("Events")]
 	[Space]
 
@@ -142,5 +144,18 @@ public class CharacterController2D : MonoBehaviour
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
 		transform.localScale = theScale;
+
+		CreateDust();
+		
 	}
+
+
+	void CreateDust ()
+    {
+
+        dust.Play();
+
+    }
+    
+
 }

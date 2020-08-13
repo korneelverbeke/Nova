@@ -14,6 +14,8 @@ public class DashToMouse : MonoBehaviour
 
     public LayerMask groundLayers;
 
+    public CameraShake cameraShake;
+
     [HideInInspector]
     public int dashCount = 0;
 
@@ -35,6 +37,10 @@ public class DashToMouse : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && dashCount <= 0)
         {
             Dash();
+
+            StartCoroutine(cameraShake.Shake(.15f, .2f));
+
+            FindObjectOfType<AudioManager>().Play("PlayerDash");
 
             if (animator.GetBool("IsJumping"))
             {
