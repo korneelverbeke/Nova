@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour
 
     public CharacterController2D controller;
 
+    public ParticleSystem dust;
+
     float horizontalMove = 0f; 
 
     public float runSpeed = 40f;
@@ -32,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && IsGrounded()) 
         {
+            dust.Play();
             jump = true;
             animator.SetBool("IsJumping", true);
         }
@@ -88,5 +91,4 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
-    
 }

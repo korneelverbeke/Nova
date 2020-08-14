@@ -9,13 +9,18 @@ public class DashToMouse : MonoBehaviour
     public Rigidbody2D rb;
 
     public Animator animator;
+ 
+    public ParticleSystem dash;
 
     public Transform groundCheck;
 
     public LayerMask groundLayers;
 
+    public CameraShake cameraShake;
+
     [HideInInspector]
     public int dashCount = 0;
+
 
     private void Start ()
     {
@@ -33,7 +38,14 @@ public class DashToMouse : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && dashCount <= 0)
         {
+
+            dash.Play();
+
             Dash();
+
+            StartCoroutine(cameraShake.Shake(.15f, .2f));
+
+            FindObjectOfType<AudioManager>().Play("PlayerDash");
 
             if (animator.GetBool("IsJumping"))
             {
@@ -79,7 +91,6 @@ public class DashToMouse : MonoBehaviour
 
     IEnumerator AddToDashCount(int numberOfDashes)
     {
-        Debug.Log("adding to dashcount");
 
         while(IsGrounded() == true)
         {
@@ -87,7 +98,7 @@ public class DashToMouse : MonoBehaviour
         }
 
         dashCount = dashCount + numberOfDashes;
-        Debug.Log("added to dashcount");
+
     }
 
 }
