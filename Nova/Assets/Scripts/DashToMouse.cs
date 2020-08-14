@@ -9,6 +9,8 @@ public class DashToMouse : MonoBehaviour
     public Rigidbody2D rb;
 
     public Animator animator;
+ 
+    public ParticleSystem dash;
 
     public Transform groundCheck;
 
@@ -36,6 +38,9 @@ public class DashToMouse : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && dashCount <= 0)
         {
+
+            dash.Play();
+
             Dash();
 
             StartCoroutine(cameraShake.Shake(.15f, .2f));
