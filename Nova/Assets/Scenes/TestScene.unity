@@ -298,6 +298,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 811175668768447248, guid: fa6b9bd21e9ae407489182b453072635, type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 811175668768447248, guid: fa6b9bd21e9ae407489182b453072635, type: 3}
+      propertyPath: m_FalloffIntensity
+      value: 0.676
+      objectReference: {fileID: 0}
     - target: {fileID: 6153522021348939503, guid: fa6b9bd21e9ae407489182b453072635, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.3
@@ -604,7 +612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30a03b59a14b3844c8b68a4e493b7e24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_JumpForce: 1500
+  m_JumpForce: 1400
   m_CrouchSpeed: 0.4
   m_MovementSmoothing: 0.07
   m_AirControl: 1
@@ -1928,7 +1936,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1.3
+      scalar: 1.8
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -1981,8 +1989,8 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 0.7
-      minScalar: 0.3
+      scalar: 0.9
+      minScalar: 0.5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -2035,7 +2043,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.17647056, g: 0.3432677, b: 0.59607846, a: 1}
+      maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -2788,8 +2796,8 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 3
-        scalar: 75
-        minScalar: 75
+        scalar: 50
+        minScalar: 50
         maxCurve:
           serializedVersion: 2
           m_Curve:
@@ -6625,7 +6633,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 884745988}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0033334098, y: -0.11733341, z: -20.237803}
+  m_LocalPosition: {x: 0.0033334098, y: -0.11733341, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 516695089}
@@ -6929,6 +6937,14 @@ PrefabInstance:
     - target: {fileID: 180637860542167703, guid: fa6b9bd21e9ae407489182b453072635, type: 3}
       propertyPath: m_Name
       value: Torch (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 811175668768447248, guid: fa6b9bd21e9ae407489182b453072635, type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 811175668768447248, guid: fa6b9bd21e9ae407489182b453072635, type: 3}
+      propertyPath: m_FalloffIntensity
+      value: 0.676
       objectReference: {fileID: 0}
     - target: {fileID: 6153522021348939503, guid: fa6b9bd21e9ae407489182b453072635, type: 3}
       propertyPath: m_LocalPosition.x
@@ -27144,6 +27160,18 @@ PrefabInstance:
     - target: {fileID: 180637860542167703, guid: fa6b9bd21e9ae407489182b453072635, type: 3}
       propertyPath: m_Name
       value: Torch
+      objectReference: {fileID: 0}
+    - target: {fileID: 811175668768447248, guid: fa6b9bd21e9ae407489182b453072635, type: 3}
+      propertyPath: m_FalloffIntensity
+      value: 0.676
+      objectReference: {fileID: 0}
+    - target: {fileID: 811175668768447248, guid: fa6b9bd21e9ae407489182b453072635, type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 811175668768447248, guid: fa6b9bd21e9ae407489182b453072635, type: 3}
+      propertyPath: m_PointLightInnerRadius
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6153522021348939503, guid: fa6b9bd21e9ae407489182b453072635, type: 3}
       propertyPath: m_LocalPosition.x
