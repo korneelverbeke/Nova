@@ -16,6 +16,7 @@ public class Respawn : MonoBehaviour
 
     void Start()
     {
+        transform.position = new Vector2(-23.5f, -9f);
         cameraPositions.Add(new Vector2(0f, 0f));
 
         cameraPositions.Add(new Vector2(46f, 6f));
@@ -49,7 +50,7 @@ public class Respawn : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collider)
     {
-        if(collider.gameObject.name == "Spikes")
+        if(collider.gameObject.tag == "spikes")
         {
             transform.position = respawnPositions[level];
         }
