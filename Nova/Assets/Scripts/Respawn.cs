@@ -46,4 +46,12 @@ public class Respawn : MonoBehaviour
         }
 
     }
+
+    void OnCollisionEnter2D(Collision2D collider)
+    {
+        if(collider.gameObject.name == "Spikes")
+        {
+            transform.position = respawnPositions[level];
+        }
+    }
 }
