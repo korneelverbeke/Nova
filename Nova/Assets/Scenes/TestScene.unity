@@ -2838,6 +2838,7 @@ Tilemap:
     second:
       serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_TileIndex: 17
       m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
@@ -4438,6 +4439,10 @@ Tilemap:
       m_TileIndex: 16
       m_TileSpriteIndex: 15
 >>>>>>> parent of f6e96a6... ik ben begonnen aan level 3
+=======
+      m_TileIndex: 16
+      m_TileSpriteIndex: 15
+>>>>>>> parent of f6e96a6... ik ben begonnen aan level 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 2
       m_TileObjectToInstantiateIndex: 65535
@@ -4463,10 +4468,16 @@ Tilemap:
   - m_RefCount: 0
     m_Data: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: d4561f72b6a7c2840870381209428b16, type: 2}
 >>>>>>> f6e96a6e94a9fb5394bbb739f060d6633dfdb4bb
   - m_RefCount: 3
+=======
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 2
+>>>>>>> parent of f6e96a6... ik ben begonnen aan level 3
 =======
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -4488,6 +4499,7 @@ Tilemap:
   - m_RefCount: 5
     m_Data: {fileID: 11400000, guid: f01769b88a9b56e48a60d9d3966e52a8, type: 2}
 <<<<<<< HEAD
+<<<<<<< HEAD
   - m_RefCount: 5
     m_Data: {fileID: 11400000, guid: 4d45a4a653ec8c8448dcac31bd91dde4, type: 2}
 <<<<<<< HEAD
@@ -4496,6 +4508,11 @@ Tilemap:
   - m_RefCount: 5
 =======
   - m_RefCount: 13
+=======
+  - m_RefCount: 6
+    m_Data: {fileID: 11400000, guid: 4d45a4a653ec8c8448dcac31bd91dde4, type: 2}
+  - m_RefCount: 10
+>>>>>>> parent of f6e96a6... ik ben begonnen aan level 3
 =======
   - m_RefCount: 6
     m_Data: {fileID: 11400000, guid: 4d45a4a653ec8c8448dcac31bd91dde4, type: 2}
@@ -4533,10 +4550,16 @@ Tilemap:
   - m_RefCount: 0
     m_Data: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   - m_RefCount: 1
     m_Data: {fileID: 2179468725703270848, guid: c5cc4d9dbdc50954395ab7bc92c014c3, type: 3}
 >>>>>>> f6e96a6e94a9fb5394bbb739f060d6633dfdb4bb
   - m_RefCount: 3
+=======
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 2
+>>>>>>> parent of f6e96a6... ik ben begonnen aan level 3
 =======
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -4556,6 +4579,7 @@ Tilemap:
   - m_RefCount: 6
     m_Data: {fileID: -2991613339344906042, guid: c5cc4d9dbdc50954395ab7bc92c014c3, type: 3}
 <<<<<<< HEAD
+<<<<<<< HEAD
   - m_RefCount: 5
     m_Data: {fileID: 5104320665366690494, guid: c5cc4d9dbdc50954395ab7bc92c014c3, type: 3}
 <<<<<<< HEAD
@@ -4564,6 +4588,11 @@ Tilemap:
   - m_RefCount: 5
 =======
   - m_RefCount: 13
+=======
+  - m_RefCount: 6
+    m_Data: {fileID: 5104320665366690494, guid: c5cc4d9dbdc50954395ab7bc92c014c3, type: 3}
+  - m_RefCount: 10
+>>>>>>> parent of f6e96a6... ik ben begonnen aan level 3
 =======
   - m_RefCount: 6
     m_Data: {fileID: 5104320665366690494, guid: c5cc4d9dbdc50954395ab7bc92c014c3, type: 3}
@@ -4584,10 +4613,14 @@ Tilemap:
   m_TileMatrixArray:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - m_RefCount: 154
 =======
   - m_RefCount: 328
 >>>>>>> f6e96a6e94a9fb5394bbb739f060d6633dfdb4bb
+=======
+  - m_RefCount: 160
+>>>>>>> parent of f6e96a6... ik ben begonnen aan level 3
 =======
   - m_RefCount: 160
 >>>>>>> parent of f6e96a6... ik ben begonnen aan level 3
@@ -4615,10 +4648,14 @@ Tilemap:
     m_Data: {r: -3.9954e-41, g: -3.9954e-41, b: -3.9954e-41, a: -3.9954e-41}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - m_RefCount: 154
 =======
   - m_RefCount: 328
 >>>>>>> f6e96a6e94a9fb5394bbb739f060d6633dfdb4bb
+=======
+  - m_RefCount: 160
+>>>>>>> parent of f6e96a6... ik ben begonnen aan level 3
 =======
   - m_RefCount: 160
 >>>>>>> parent of f6e96a6... ik ben begonnen aan level 3
