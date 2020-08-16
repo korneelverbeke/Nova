@@ -405,6 +405,7 @@ Tilemap:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - first: {x: -16, y: -10, z: 0}
     second:
       serializedVersion: 2
@@ -430,6 +431,8 @@ Tilemap:
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+=======
+>>>>>>> parent of f6e96a6... ik ben begonnen aan level 3
 =======
 >>>>>>> parent of f6e96a6... ik ben begonnen aan level 3
 =======
@@ -485,6 +488,7 @@ Tilemap:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - first: {x: -16, y: -9, z: 0}
     second:
       serializedVersion: 2
@@ -510,6 +514,8 @@ Tilemap:
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+=======
+>>>>>>> parent of f6e96a6... ik ben begonnen aan level 3
 =======
 >>>>>>> parent of f6e96a6... ik ben begonnen aan level 3
 =======
@@ -873,10 +879,14 @@ Tilemap:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - m_RefCount: 60
 =======
   - m_RefCount: 63
 >>>>>>> f6e96a6e94a9fb5394bbb739f060d6633dfdb4bb
+=======
+  - m_RefCount: 59
+>>>>>>> parent of f6e96a6... ik ben begonnen aan level 3
 =======
   - m_RefCount: 59
 >>>>>>> parent of f6e96a6... ik ben begonnen aan level 3
@@ -908,10 +918,14 @@ Tilemap:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - m_RefCount: 60
 =======
   - m_RefCount: 63
 >>>>>>> f6e96a6e94a9fb5394bbb739f060d6633dfdb4bb
+=======
+  - m_RefCount: 59
+>>>>>>> parent of f6e96a6... ik ben begonnen aan level 3
 =======
   - m_RefCount: 59
 >>>>>>> parent of f6e96a6... ik ben begonnen aan level 3
@@ -1052,10 +1066,14 @@ Grid:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &6301545987815928375
 =======
 --- !u!114 &8796303941058756527
 >>>>>>> f6e96a6e94a9fb5394bbb739f060d6633dfdb4bb
+=======
+--- !u!114 &6798434545163668118
+>>>>>>> parent of f6e96a6... ik ben begonnen aan level 3
 =======
 --- !u!114 &6798434545163668118
 >>>>>>> parent of f6e96a6... ik ben begonnen aan level 3
