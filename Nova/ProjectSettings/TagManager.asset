@@ -54,6 +54,9 @@ TagManager:
   - name: player
     uniqueID: 2197018275
     locked: 0
+  - name: spikes
+    uniqueID: 18659137
+    locked: 0
   - name: star
     uniqueID: 408802885
     locked: 0
