@@ -6,6 +6,28 @@ public class Fall : MonoBehaviour
 {
     public Rigidbody2D rb;
     bool dropped = false;
+    Vector2 startPosition;
+
+    void Start()
+    {
+        startPosition = transform.position;
+    }
+
+    void Update()
+    {
+        if(transform.position.y < -20)
+        {
+            rb.isKinematic = true;
+
+            rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
+
+            rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
+
+            transform.position = startPosition;
+
+            dropped = false;
+        }
+    }
 
     void OnCollisionEnter2D(Collision2D collider)
     {

@@ -16,14 +16,19 @@ public class Respawn : MonoBehaviour
 
     void Start()
     {
-        transform.position = new Vector2(-23.5f, -9f);
+        //transform.position = new Vector2(-23.5f, -9f);
+
         cameraPositions.Add(new Vector2(0f, 0f));
 
         cameraPositions.Add(new Vector2(46f, 6f));
 
+        cameraPositions.Add(new Vector2(93f, 12.5f));
+
         respawnPositions.Add(new Vector2(-22.43298f, -10.112f));
 
-        respawnPositions.Add(new Vector2(23.58f, 4.884028f));
+        respawnPositions.Add(new Vector2(23.58f, 2f));
+
+        respawnPositions.Add(new Vector2(70f, 2f));
     }
 
 
@@ -40,10 +45,15 @@ public class Respawn : MonoBehaviour
             camera.position = cameraPositions[0];
             level = 0;
         }
-        else
+        else if (transform.position.x > 23.5 && transform.position.x < 70)
         {
             camera.position = cameraPositions[1];
             level = 1;
+        }
+        else if (transform.position.x > 70)
+        {
+            camera.position = cameraPositions[2];
+            level = 2;
         }
 
     }
