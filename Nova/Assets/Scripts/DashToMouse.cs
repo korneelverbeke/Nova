@@ -9,7 +9,7 @@ public class DashToMouse : MonoBehaviour
     public Rigidbody2D rb;
 
     public Animator animator;
- 
+
     public ParticleSystem dash;
 
     public Transform groundCheck;
