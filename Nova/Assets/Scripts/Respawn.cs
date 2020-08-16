@@ -16,13 +16,13 @@ public class Respawn : MonoBehaviour
 
     void Start()
     {
-        transform.position = new Vector2(-23.5f, -9f);
+        //transform.position = new Vector2(-23.5f, -9f);
 
         cameraPositions.Add(new Vector2(0f, 0f));
 
         cameraPositions.Add(new Vector2(46f, 6f));
 
-        cameraPositions.Add(new Vector2(93f, 2f));
+        cameraPositions.Add(new Vector2(93f, 12.5f));
 
         respawnPositions.Add(new Vector2(-22.43298f, -10.112f));
 
