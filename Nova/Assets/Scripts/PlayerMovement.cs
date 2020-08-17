@@ -24,8 +24,26 @@ public class PlayerMovement : MonoBehaviour
 
     public LayerMask groundLayers;
 
+    public Rigidbody2D rb;
+
+    public float raycastDistance;
+
+    public LayerMask ladderLayer;
+
+    private bool isClimbing;
+
+    private float inputVertical;
+
+
+    void Start ()
+    {
+
+        rb = GetComponent<Rigidbody2D>();
+
+    }
+
     
-    void Update()
+    void Update ()
     {
         
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
@@ -87,6 +105,35 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
         
         jump = false;
+
+       RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, Vector2.up, raycastDistance, ladderLayer); 
+
+       if (hitInfo.collider != null)
+       {
+           if (Input.GetKeyDown(KeyCode.Z))
+           {
+               isClimbing = true;
+           }
+       }
+
+       else 
+       {
+           isClimbing = false;
+       }
+
+       if (isClimbing == true)
+       {
+           inputVertical = Input.GetAxisRaw("Vertical");
+
+           rb.velocity = new Vector2(rb.velocity.x, inputVertical * 20);
+
+           rb.gravityScale = 0;
+       }
+
+       else
+       {
+           rb.gravityScale = 5;
+       }
 
     }
 
