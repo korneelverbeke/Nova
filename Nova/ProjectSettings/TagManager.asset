@@ -63,3 +63,6 @@ TagManager:
   - name: rocks
     uniqueID: 426393313
     locked: 0
+  - name: orbs
+    uniqueID: 4053767459
+    locked: 0
