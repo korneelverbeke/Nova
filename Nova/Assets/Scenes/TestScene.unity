@@ -1157,7 +1157,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1536
   rb: {fileID: 0}
-  raycastDistance: 0
+  raycastDistance: 5
   ladderLayer:
     serializedVersion: 2
     m_Bits: 4096
