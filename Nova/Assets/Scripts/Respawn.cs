@@ -45,12 +45,12 @@ public class Respawn : MonoBehaviour
             camera.position = cameraPositions[0];
             level = 0;
         }
-        else if (transform.position.x > 23.5 && transform.position.x < 70)
+        else if (transform.position.x >= 23.5 && transform.position.x < 69.5)
         {
             camera.position = cameraPositions[1];
             level = 1;
         }
-        else if (transform.position.x > 70)
+        else if (transform.position.x >= 69.5)
         {
             camera.position = cameraPositions[2];
             level = 2;
