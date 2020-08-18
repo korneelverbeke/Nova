@@ -66,3 +66,6 @@ TagManager:
   - name: orbs
     uniqueID: 4053767459
     locked: 0
+  - name: lights
+    uniqueID: 1571995059
+    locked: 0
