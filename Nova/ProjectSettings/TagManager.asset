@@ -8,6 +8,7 @@ TagManager:
   - Lights
   - Props
   - spikes
+  - patrol
   layers:
   - Default
   - TransparentFX
