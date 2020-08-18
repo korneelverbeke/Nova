@@ -1102,7 +1102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30a03b59a14b3844c8b68a4e493b7e24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_JumpForce: 1100
+  m_JumpForce: 830
   m_CrouchSpeed: 0.4
   m_MovementSmoothing: 0.07
   m_AirControl: 1
@@ -1164,7 +1164,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 5
+  m_GravityScale: 3.7
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -1207,7 +1207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5749d759e743904881ec52b85ee979f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dashDuration: 0.25
+  dashDuration: 0.1
   ceilingCheck: {fileID: 1610675145}
   groundCheck: {fileID: 251702176}
   frontWallCheck: {fileID: 162519474}
@@ -1219,7 +1219,7 @@ MonoBehaviour:
   animator: {fileID: 516695091}
   dash: {fileID: 884745990}
   cameraShake: {fileID: 1494782341}
-  dashForce: 25
+  dashForce: 30
   mouseDir: {x: 0, y: 0}
   dashCount: 0
 --- !u!114 &516695095
@@ -11741,7 +11741,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1141609400}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 336a8696a8a4346c2a4ba7aa35d887de, type: 3}
   m_Name: 
