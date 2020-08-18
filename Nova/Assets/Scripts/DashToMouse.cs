@@ -121,7 +121,7 @@ public class DashToMouse : MonoBehaviour
             yield return null;
         }
 
-        rb.velocity = new Vector2(0, 0);
+        rb.velocity = mouseDir * dashForce;
 
         animator.SetBool("IsDashing", false);
     }
