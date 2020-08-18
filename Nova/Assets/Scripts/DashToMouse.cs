@@ -141,7 +141,10 @@ public class DashToMouse : MonoBehaviour
 
         rb.velocity = mouseDir * dashForce;
 
-        animator.SetBool("IsDashing", false);
+        if(IsGrounded())
+        {
+            animator.SetBool("IsDashing", false);
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collider)
