@@ -7,7 +7,15 @@ public class DashToMouse : MonoBehaviour
 
     public float dashDuration;
 
+    bool touchingWall;
+
     public Transform ceilingCheck;
+
+    public Transform groundCheck;
+
+    public Transform frontWallCheck;
+
+    public Transform backWallCheck;
 
     public LayerMask groundLayers;
 
@@ -18,8 +26,6 @@ public class DashToMouse : MonoBehaviour
     public Animator animator;
 
     public ParticleSystem dash;
-
-    public Transform groundCheck;
 
     public CameraShake cameraShake;
 
@@ -39,13 +45,25 @@ public class DashToMouse : MonoBehaviour
 
     void Update ()
     {
+        Collider2D frontWallCheckRadius = Physics2D.OverlapCircle(frontWallCheck.position, 0.5f, groundLayers);
+
+        Collider2D backWallCheckRadius = Physics2D.OverlapCircle(backWallCheck.position, 0.5f, groundLayers);
+
+        if (frontWallCheckRadius != null || backWallCheckRadius != null)
+        {
+            touchingWall = true;
+        }
+        else
+        {
+            touchingWall = false;
+        }
 
         if (IsGrounded())
         {
             dashCount = 0;
         }
 
-        if (Input.GetMouseButtonDown(0) && dashCount <= 0)
+        if (Input.GetMouseButtonDown(0) && dashCount <= 0 && touchingWall == false)
         {
 
             dash.Play();
