@@ -118,7 +118,7 @@ public class DashToMouse : MonoBehaviour
 
         float elapsed = 0.0f;
 
-                quitDash = false;
+        quitDash = false;
 
         while(elapsed < duration && quitDash == false)
         {
@@ -132,6 +132,11 @@ public class DashToMouse : MonoBehaviour
             }
 
             if (HitCeiling())
+            {
+                quitDash = true;
+            }
+
+            if(touchingWall == true)
             {
                 quitDash = true;
             }
