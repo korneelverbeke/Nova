@@ -434,6 +434,36 @@ Transform:
   m_Father: {fileID: 516695089}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &265482941
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 265482944}
+  m_Layer: 13
+  m_Name: RopeHingeAnchor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &265482944
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 265482941}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 516695089}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &283208929
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,6 +951,7 @@ GameObject:
   - component: {fileID: 516695091}
   - component: {fileID: 516695094}
   - component: {fileID: 516695096}
+  - component: {fileID: 516695097}
   m_Layer: 11
   m_Name: Manu
   m_TagString: Player
@@ -1040,7 +1071,7 @@ Transform:
   - {fileID: 1693650464}
   - {fileID: 884745991}
   - {fileID: 2053274986}
-  - {fileID: 1141609401}
+  - {fileID: 265482944}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1192,8 +1223,8 @@ MonoBehaviour:
   camera: {fileID: 1494782339}
   cameraPositions: []
   respawnPositions: []
---- !u!231 &516695096
-SpringJoint2D:
+--- !u!232 &516695096
+DistanceJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1203,15 +1234,35 @@ SpringJoint2D:
   serializedVersion: 4
   m_EnableCollision: 0
   m_ConnectedRigidBody: {fileID: 0}
-  m_BreakForce: 0
+  m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 0
   m_Distance: 25.16446
-  m_DampingRatio: 0
-  m_Frequency: 1
+  m_MaxDistanceOnly: 0
+--- !u!114 &516695097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516695085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9cdfed7d119b4397ae37e955473b34f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ropeHingeAnchor: {fileID: 265482941}
+  ropeJoint: {fileID: 516695096}
+  crosshair: {fileID: 1501442685}
+  crosshairSprite: {fileID: 1501442686}
+  playerMovement: {fileID: 516695093}
+  ropeAttached: 0
+  playerPosition: {x: 0, y: 0}
+  ropeHingeAnchorRb: {fileID: 0}
+  ropeHingeAnchorSprite: {fileID: 0}
 --- !u!1 &685088373
 GameObject:
   m_ObjectHideFlags: 0
@@ -12082,55 +12133,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1141609400
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1141609401}
-  - component: {fileID: 1141609402}
-  m_Layer: 0
-  m_Name: GrapplingRope
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1141609401
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1141609400}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 516695089}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1141609402
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1141609400}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 336a8696a8a4346c2a4ba7aa35d887de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  WhatIsGrappeable:
-    serializedVersion: 2
-    m_Bits: 512
-  GrapplingRope: {fileID: 1141609401}
-  player: {fileID: 516695089}
-  maxDistance: 1000
 --- !u!1 &1165230078
 GameObject:
   m_ObjectHideFlags: 0

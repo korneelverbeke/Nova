@@ -23,7 +23,7 @@ TagManager:
   - Scene Boundaries
   - Player
   - Ladder
-  - 
+  - rope
   - 
   - 
   - 
@@ -58,15 +58,12 @@ TagManager:
   - name: spikes
     uniqueID: 18659137
     locked: 0
+  - name: star
+    uniqueID: 408802885
+    locked: 0
   - name: rocks
     uniqueID: 426393313
     locked: 0
   - name: orbs
     uniqueID: 4053767459
-    locked: 0
-  - name: lights
-    uniqueID: 1571995059
-    locked: 0
-  - name: star
-    uniqueID: 408802885
     locked: 0
