@@ -2127,7 +2127,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 426393313
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 23aff5ae8a1014f39bc6f533cd19f5b7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2364,7 +2364,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 426393313
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -11683,7 +11683,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 426393313
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -12127,9 +12127,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WhatIsGrappeable:
     serializedVersion: 2
-    m_Bits: 0
-  GrapplingRope: {fileID: 0}
-  player: {fileID: 0}
+    m_Bits: 512
+  GrapplingRope: {fileID: 1141609401}
+  player: {fileID: 516695089}
   maxDistance: 1000
 --- !u!1 &1165230078
 GameObject:
@@ -12322,7 +12322,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 408802885
-  m_SortingLayer: 8
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_RenderMode: 0
   m_SortMode: 0
@@ -17490,7 +17490,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 408802885
-  m_SortingLayer: 8
+  m_SortingLayer: 5
   m_SortingOrder: 11
   m_Sprite: {fileID: 21300000, guid: 2c702c8bde8a7f44b96e0ccbb044299f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -39243,7 +39243,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 426393313
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}

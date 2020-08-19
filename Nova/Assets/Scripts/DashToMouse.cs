@@ -64,7 +64,7 @@ public class DashToMouse : MonoBehaviour
             dashCount = 0;
         }
 
-        if (Input.GetMouseButtonDown(0) && dashCount <= 0 && touchingWall == false)
+        if (Input.GetMouseButtonDown(0) && dashCount <= 0)
         {
 
             dash.Play();
