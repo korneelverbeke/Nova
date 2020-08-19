@@ -52,18 +52,18 @@ TagManager:
   - name: ground
     uniqueID: 368508359
     locked: 0
-  - name: player
-    uniqueID: 2197018275
-    locked: 0
   - name: spikes
     uniqueID: 18659137
-    locked: 0
-  - name: star
-    uniqueID: 408802885
     locked: 0
   - name: rocks
     uniqueID: 426393313
     locked: 0
   - name: orbs
     uniqueID: 4053767459
+    locked: 0
+  - name: player
+    uniqueID: 2197018275
+    locked: 0
+  - name: star
+    uniqueID: 408802885
     locked: 0
