@@ -67,3 +67,6 @@ TagManager:
   - name: star
     uniqueID: 408802885
     locked: 0
+  - name: ladder
+    uniqueID: 1705770535
+    locked: 0
