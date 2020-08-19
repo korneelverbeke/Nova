@@ -33910,7 +33910,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zork
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7977337758495649038, guid: ebdfdf2ec6462334eab5a3ad05712b44, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ebdfdf2ec6462334eab5a3ad05712b44, type: 3}
 --- !u!1 &1693650463
 GameObject:
