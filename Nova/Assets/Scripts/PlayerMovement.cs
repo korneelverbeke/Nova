@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-
-
     public CharacterController2D controller;
 
     public ParticleSystem dust;
@@ -34,23 +32,24 @@ public class PlayerMovement : MonoBehaviour
 
     private float inputVertical;
 
+    bool touchingWall;
+
 
     void Start ()
     {
-
         rb = GetComponent<Rigidbody2D>();
-
     }
 
 
     void Update ()
     {
+        touchingWall = GetComponent<DashToMouse>().touchingWall;
 
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
-        if (Input.GetButtonDown("Jump") && IsGrounded())
+        if (Input.GetButtonDown("Jump") && IsGrounded() && touchingWall != true)
         {
             dust.Play();
             jump = true;

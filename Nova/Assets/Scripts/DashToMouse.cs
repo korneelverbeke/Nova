@@ -7,7 +7,8 @@ public class DashToMouse : MonoBehaviour
 
     public float dashDuration;
 
-    bool touchingWall;
+    [HideInInspector]
+    public bool touchingWall;
 
     public Transform ceilingCheck;
 
