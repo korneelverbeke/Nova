@@ -2103,7 +2103,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 426393313
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 23aff5ae8a1014f39bc6f533cd19f5b7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2340,7 +2340,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 426393313
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -11655,7 +11655,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 426393313
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -12294,7 +12294,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 408802885
-  m_SortingLayer: 5
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_RenderMode: 0
   m_SortMode: 0
@@ -17462,7 +17462,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 408802885
-  m_SortingLayer: 5
+  m_SortingLayer: 8
   m_SortingOrder: 11
   m_Sprite: {fileID: 21300000, guid: 2c702c8bde8a7f44b96e0ccbb044299f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -33846,14 +33846,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 92600119}
     m_Modifications:
-    - target: {fileID: 7977337758436644078, guid: ebdfdf2ec6462334eab5a3ad05712b44, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.837
-      objectReference: {fileID: 0}
-    - target: {fileID: 7977337758436644078, guid: ebdfdf2ec6462334eab5a3ad05712b44, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.732
-      objectReference: {fileID: 0}
     - target: {fileID: 7977337758495649025, guid: ebdfdf2ec6462334eab5a3ad05712b44, type: 3}
       propertyPath: m_LocalPosition.x
       value: 92.051
@@ -33898,20 +33890,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7977337758495649025, guid: ebdfdf2ec6462334eab5a3ad05712b44, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7977337758495649025, guid: ebdfdf2ec6462334eab5a3ad05712b44, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.3
-      objectReference: {fileID: 0}
     - target: {fileID: 7977337758495649026, guid: ebdfdf2ec6462334eab5a3ad05712b44, type: 3}
       propertyPath: m_Name
       value: Zork
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7977337758495649038, guid: ebdfdf2ec6462334eab5a3ad05712b44, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebdfdf2ec6462334eab5a3ad05712b44, type: 3}
 --- !u!1 &1693650463
 GameObject:
@@ -39232,7 +39215,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 426393313
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
