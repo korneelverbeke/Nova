@@ -61,12 +61,12 @@ TagManager:
   - name: orbs
     uniqueID: 4053767459
     locked: 0
+  - name: ladder
+    uniqueID: 1705770535
+    locked: 0
   - name: player
     uniqueID: 2197018275
     locked: 0
   - name: star
     uniqueID: 408802885
-    locked: 0
-  - name: ladder
-    uniqueID: 1705770535
     locked: 0
