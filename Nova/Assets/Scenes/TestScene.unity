@@ -1117,7 +1117,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 4
+  m_GravityScale: 3.7
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -1191,25 +1191,19 @@ MonoBehaviour:
   camera: {fileID: 1494782339}
   cameraPositions: []
   respawnPositions: []
---- !u!232 &516695096
-DistanceJoint2D:
+--- !u!114 &516695096
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 516695085}
   m_Enabled: 0
-  serializedVersion: 4
-  m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 0}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 0
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0, y: 0}
-  m_AutoConfigureDistance: 0
-  m_Distance: 25.16446
-  m_MaxDistanceOnly: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 336a8696a8a4346c2a4ba7aa35d887de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mousePos: {x: 0, y: 0, z: 0}
 --- !u!1 &685088373
 GameObject:
   m_ObjectHideFlags: 0

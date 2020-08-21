@@ -4,66 +4,38 @@ using UnityEngine;
 
 public class Grapple : MonoBehaviour
 {
-    Vector2 GrapplePoint;
-
-    public LayerMask WhatIsGrappeable;
-
-    public Transform GrapplingRope, player;
-
-    public int maxDistance = 1000;
-
-    SpringJoint2D joint;
+    //creating a var called mousePos
+    public Vector3 mousePos;
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        //get the mouseposition and store it in our mousPos variable
+        mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+        //z = 0, to keep eerything in the 2D scene
+        mousePos.z = 0f;
+
+        //When you click...
+        if(Input.GetMouseButtonDown(0))
         {
-            StartGrappling();
-        }
-            else if (Input.GetMouseButtonUp(0))
-        {
-            StopGrappling();
-        }
-    }
+            //We create a new Distancejoint2D component and we store it in a joint variable
+            var joint = gameObject.AddComponent<DistanceJoint2D>();
 
-    void StartGrappling()
-    {
-        var mousePos = Camera.main.ScreenToWorldPoint (Input.mousePosition);
+            //setting the values of the joint
+            joint.autoConfigureDistance = false;
 
-        var mouseDif = mousePos - gameObject.transform.position;
+            var distanceToMouse = (mousePos - transform.position);
 
-        mouseDif.z = 0.0f;
+            var distance = distanceToMouse.magnitude;
 
-        float distance = mouseDif.magnitude;
+            //the first distance is from the DistanceJoint2D component and the 2nd distance is our var from above
+            joint.distance = distance;
 
-        var mouseDir = mouseDif / distance;
-
-        mouseDir.Normalize();
-
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, -Vector2.up);
-
-        if (hit.collider != null)
-        {
-            GrapplePoint = hit.point;
-
-            joint = player.gameObject.AddComponent<SpringJoint2D>();
+            joint.maxDistanceOnly = true;
 
             joint.autoConfigureConnectedAnchor = false;
 
-            joint.connectedAnchor = GrapplePoint;
-
-            float distanceFromPoint = Vector2.Distance(player.position, GrapplePoint);
-
-            joint.distance = distanceFromPoint;
-
-            joint.dampingRatio = 7f;
+            joint.connectedAnchor = mousePos;
         }
-
     }
-
-    void StopGrappling()
-    {
-
-    }
-
 }
