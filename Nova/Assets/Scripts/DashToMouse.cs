@@ -7,6 +7,8 @@ public class DashToMouse : MonoBehaviour
 
     public float dashDuration;
 
+    public bool swinging;
+
     [HideInInspector]
     public bool touchingWall;
 
@@ -66,23 +68,25 @@ public class DashToMouse : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && dashCount <= 0)
         {
+            swinging = GetComponent<Grapple>().swinging;
+            if (!swinging){
+                dash.Play();
 
-            dash.Play();
+                StartCoroutine(Dash(dashDuration));
 
-            StartCoroutine(Dash(dashDuration));
+                StartCoroutine(cameraShake.Shake(.15f, .2f));
 
-            StartCoroutine(cameraShake.Shake(.15f, .2f));
+                FindObjectOfType<AudioManager>().Play("PlayerDash");
 
-            FindObjectOfType<AudioManager>().Play("PlayerDash");
+                if (animator.GetBool("IsJumping"))
+                {
+                    animator.SetBool("IsJumping", false);
+                }
 
-            if (animator.GetBool("IsJumping"))
-            {
-              animator.SetBool("IsJumping", false);
+                animator.SetBool("IsDashing", true);
+
+                StartCoroutine(AddToDashCount(1));
             }
-
-            animator.SetBool("IsDashing", true);
-
-            StartCoroutine(AddToDashCount(1));
         }
 
     }

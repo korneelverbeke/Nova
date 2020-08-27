@@ -9,6 +9,7 @@ TagManager:
   - Props
   - spikes
   - patrol
+  - Grappleable
   layers:
   - Default
   - TransparentFX
