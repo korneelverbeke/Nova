@@ -24,11 +24,15 @@ public class Respawn : MonoBehaviour
 
         cameraPositions.Add(new Vector2(94f, 12.5f));
 
+        cameraPositions.Add(new Vector2(141.3f, 10f));
+
         respawnPositions.Add(new Vector2(-22.43298f, -10.112f));
 
         respawnPositions.Add(new Vector2(23.58f, 2f));
 
         respawnPositions.Add(new Vector2(70f, 2f));
+
+        respawnPositions.Add(new Vector2(118f, 6.2f));
     }
 
 
@@ -50,10 +54,15 @@ public class Respawn : MonoBehaviour
             camera.position = cameraPositions[1];
             level = 1;
         }
-        else if (transform.position.x >= 69.5)
+        else if (transform.position.x >= 69.5 && transform.position.x < 118)
         {
             camera.position = cameraPositions[2];
             level = 2;
+        }
+        else if (transform.position.x >= 118)
+        {
+            camera.position = cameraPositions[3];
+            level = 3;
         }
 
     }

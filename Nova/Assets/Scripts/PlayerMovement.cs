@@ -34,6 +34,8 @@ public class PlayerMovement : MonoBehaviour
 
     bool touchingWall;
 
+    bool attackFromAbove;
+
 
     void Start ()
     {
@@ -58,8 +60,14 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Crouch"))
         {
-            crouch = true;
-            animator.SetBool("IsCrouching", true);
+            if(IsGrounded()){
+                crouch = true;
+                animator.SetBool("IsCrouching", true);
+            }
+            if(!IsGrounded()){
+                attackFromAbove = true;
+                animator.SetBool("IsAttackingFromAbove", true);
+            }
         }
 
         else if (Input.GetButtonUp("Crouch"))
@@ -134,6 +142,12 @@ public class PlayerMovement : MonoBehaviour
            rb.gravityScale = 3.7f;
        }
 
+    }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+      if(other.gameObject.name == "Orb"){
+        Destroy(other.gameObject);
+      }
     }
 
 

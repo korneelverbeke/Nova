@@ -41,6 +41,8 @@ public class Grapple : MonoBehaviour
           {
               swinging = true;
 
+              Debug.Log(Vector2.Distance(transform.position, gameObject.transform.position));
+
               StartSwing();
           }
         }

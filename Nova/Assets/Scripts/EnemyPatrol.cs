@@ -12,6 +12,8 @@ public class EnemyPatrol : MonoBehaviour
 
     private bool movingRight = true;
 
+    public string groundTag = "patrol";
+
 
     void Update ()
     {
@@ -19,22 +21,22 @@ public class EnemyPatrol : MonoBehaviour
         transform.Translate(Vector2.right * speed * Time.deltaTime);
 
         RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, Vector2.down, 1f);
-
         if(groundInfo.collider != null)
         {
-            if(groundInfo.collider.tag != "patrol")
+            groundTag = groundInfo.collider.tag;
+        }
+        if(groundTag != "patrol" || groundInfo.collider == null)
+        {
+            if(movingRight == false)
             {
-                if(movingRight == false)
-                {
-                    transform.eulerAngles =  new Vector3(0, -180, 0);
-                    movingRight = true;
-                }
+                transform.eulerAngles =  new Vector3(0, -180, 0);
+                movingRight = true;
+            }
 
-                else 
-                {
-                    transform.eulerAngles = new Vector3(0, 0, 0);
-                    movingRight = false;
-                }
+            else
+              {
+                transform.eulerAngles = new Vector3(0, 0, 0);
+                movingRight = false;
             }
         }
 
